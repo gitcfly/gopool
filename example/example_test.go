@@ -8,6 +8,9 @@ import (
 )
 
 func TestGoPool(t *testing.T) {
+	// the first params is max goroutine count,default value is runtime.NumCPU()
+	// the second params is max task cap,default is 100
+	// p := gopool.NewPool(0, 0) // use the default params value
 	p := gopool.NewPool(2, 100)
 	p.Execute(func() error {
 		fmt.Println("run task 1")
