@@ -1,6 +1,8 @@
 # gopool
 golang实现的协程池
 
+go get github.com/gitcfly/gopool
+
 ```
 import (
 	"fmt"
